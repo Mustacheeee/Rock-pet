@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ROCK PET</title>
+    <link rel="stylesheet" href="/Page/style.css">
+    <link rel="stylesheet" href="homelessStyle.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="/Page/index.html"><img src="/image/img-akjQou8AGhUZhNbMRL5Zl.jpeg" alt="logo"></a>
+        </div>
+
+        <ul>
+            <li> <a href="/Page/cyber/cyber.html">Adopt A Cyber Rock Pet</a> </li>
+            <li> <button ondblclick="myalert()" title="Double Click">Adopt A Real Rock Pet</button></li>
+            <li> <a href="/Page/homeless/homeless.html">Post A Homeless Rock</a> </li>
+            <li> <a href="/Page/gallery/gallery.html">Gallery</a> </li>
+        </ul>
+        <div class="nav-icons">
+            <a href="/Page/index.html"><img src="/image/img-akjQou8AGhUZhNbMRL5Zl.jpeg" alt="logo"></a>
+        </div>
+    </div>
+    
+    <script>
+        function myalert() { 
+            alert("Ready for your first rock pet?\n\n\n " + 
+            "Dude just go out and grab one :)"); 
+        } 
+    </script>
+    <!-- header end -->
+
+    <!-- try to add some react here -->
+    <div id="someRandomid"></div>
+
+    <!-- load/import react library -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <script src="homeless.js"></script>
+
+
+    <main class="app">
+        <div class="header">
+            <h2>Post A Rock</h2>
+            <div class="server-message"></div>
+        </div>
+
+        <div class="post-rock">
+
+            <div class="input-div">
+                <p>Drag & drop image here or <span class="browse">Browse</span></p>
+                <input type="file" class="file" multiple="multiple" accept="image/png, image/jpeg, image/jpg">
+            </div>
+            
+            <div class="info">
+                <h3>Lost Pet Information</h3>
+                <form action="ontrip.html" method="GET">
+                    <div class="info_item">
+                        <label for="name" class="label">Rock Name</label>
+                        <input type="text" name = "name" id="name" class="input" placeholder="anything you can imagine" required>
+                    </div>
+                    <div class="info_item">
+                        <label for="trait" class="label">Trait</label>
+                        <input type="text" name="trait" id="trait" class="input" placeholder="flat head, sharp feet, etc.." required>
+                    </div>
+                    <div class="info_item">
+                        <label for="region" class="label">Found Region</label>
+                        <input type="text"  name="region" id="region" class="input" placeholder="Planet 2YK6" required>
+                    </div>
+                    <div class="info_item">
+                        <label for="like" class="label">Like</label>
+                        <input type="text"  name="like" id="like" class="input" placeholder="food,exercise,etc.." required>
+                    </div>
+                    <div class="info_item">
+                        <label for="dislike" class="label">Dislike</label>
+                        <input type="text"  name="dislike" id="dislike" class="input" placeholder="people,weather,etc.." required>
+                    </div>
+                    <button type="submit">Upload</button>
+                </form>
+            </div>
+        </div>
+
+
+        
+
+        <form id="saved-form">
+            <div class="saved-div"></div>
+        </form>
+        <form id="queued-form">
+            <div class="queued-div"></div>
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>

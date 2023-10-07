@@ -1,0 +1,109 @@
+.wrapper-imgs{
+    margin: 0 20vw;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+/* container style */
+#cyber-imgs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    grid-template-areas: 
+    "cyber-h2 cyber-h2 cyber-h2 cyber-h2"
+    "img1 img2 img3 img4"
+    "img5 img6 img3 img7";
+}
+
+/* style imgs inside container */
+#cyber-imgs .cyber-img{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+/* images */
+#cyber-imgs h2{
+    grid-area: cyber-h2;
+    margin-top: 60px;
+    margin-bottom: auto;
+} 
+
+#cyber-imgs .img1{
+    grid-area: img1;
+    background-image: url(/image/r1s.jpg);
+}
+#cyber-imgs .img2{
+    grid-area: img2;
+    background-image: url(/image/r2s.jpg);
+}
+#cyber-imgs .img3{
+    grid-area: img3;
+    background-image: url(/image/r3s.jpg);
+    height: 610px;
+}
+#cyber-imgs .img4{
+    grid-area: img4;
+    background-image: url(/image/r4s.jpg);
+}
+#cyber-imgs .img5{
+    grid-area: img5;
+    background-image: url(/image/r5s.jpg);
+}
+#cyber-imgs .img6{
+    grid-area: img6;
+    background-image: url(/image/r6s.jpg);
+}
+#cyber-imgs .img7{
+    grid-area: img7;
+    background-image: url(/image/r7s.jpg);
+}
+
+/* imgs titles */
+.cyber-img div{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cyber-img a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cyber-img div:hover{
+    opacity: 0.8;
+    transition: all ease-in-out 100ms;
+}
+
+/* popup window when click */
+.img-window{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.img-window img{
+    max-height: 80vh;
+    max-width: 80vw;
+    
+}
