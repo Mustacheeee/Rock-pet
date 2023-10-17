@@ -137,7 +137,11 @@ body{
   margin-top: 25px;
 }
 
+.trip-video{
+  background-color: #a0e792;
+}
 .trip-video video{
+  max-height: 880px;
   width: 100%;
-  height: auto;
+  overflow: hidden;
 }
