@@ -141,7 +141,7 @@ body{
   background-color: #a0e792;
 }
 .trip-video video{
-  max-height: 800px;
+  max-height: 90vh;
   width: 100%;
   overflow: hidden;
 }
