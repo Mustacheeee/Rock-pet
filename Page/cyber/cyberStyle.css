@@ -37,32 +37,32 @@ body{
 
 #cyber-imgs .img1{
     grid-area: img1;
-    background-image: url(/image/r1s.jpg);
+    background-image: url(/Rock-pet/Page/cyber/image/r1s.jpg);
 }
 #cyber-imgs .img2{
     grid-area: img2;
-    background-image: url(/image/r2s.jpg);
+    background-image: url(/Rock-pet/Page/cyber/image/r2s.jpg);
 }
 #cyber-imgs .img3{
     grid-area: img3;
-    background-image: url(/image/r3s.jpg);
+    background-image: url(/Rock-pet/Page/cyber/image/r3s.jpg);
     height: 610px;
 }
 #cyber-imgs .img4{
     grid-area: img4;
-    background-image: url(/image/r4s.jpg);
+    background-image: url(/Rock-pet/Page/cyber/image/r4s.jpg);
 }
 #cyber-imgs .img5{
     grid-area: img5;
-    background-image: url(/image/r5s.jpg);
+    background-image: url(/Rock-pet/Page/cyber/image/r5s.jpg);
 }
 #cyber-imgs .img6{
     grid-area: img6;
-    background-image: url(/image/r6s.jpg);
+    background-image: url(/Rock-pet/Page/cyber/image/r6s.jpg);
 }
 #cyber-imgs .img7{
     grid-area: img7;
-    background-image: url(/image/r7s.jpg);
+    background-image: url(/Rock-pet/Page/cyber/image/r7s.jpg);
 }
 
 /* imgs titles */
